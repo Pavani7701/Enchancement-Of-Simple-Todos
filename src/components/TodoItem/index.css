@@ -1,0 +1,32 @@
+/* Write your CSS here */
+.todo-items {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  align-items: center;
+}
+
+.name {
+  color: #000000;
+  font-family: 'Roboto';
+  font-size: 23px;
+}
+
+.button {
+  color: #ff0b37;
+  background-color: #ffffff;
+  font-family: 'Roboto';
+  font-size: 14px;
+  border: 1px solid #ff0b37;
+  border-radius: 9px;
+  outline: none;
+  cursor: pointer;
+  padding: 4px 8px 4px 8px;
+}
+@media screen and(min-widthh:768px){
+  .button{
+    font-size: 19px;
+    padding: 8px 16px 8px 16px;
+    margin-left: 30px;
+  }
+}
