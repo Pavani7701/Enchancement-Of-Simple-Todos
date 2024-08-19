@@ -1,17 +1,39 @@
 /* Write your CSS here */
-.todo-items {
-  display: flex;
-  justify-content: space-between;
+.todo-item {
   list-style-type: none;
   align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 30px;
+  background-color: white;
 }
-
-.name {
+/* .inner-container {
+  background-color: white;
+} */
+.delete-btn {
+  background-color: white;
+  color: #ff0b37;
+  border: 2px solid #ff0b37;
+  padding: 10px 15px;
+  margin-bottom: 5px;
+}
+.title {
+  margin-left: 5px;
   color: #000000;
+  font-size: 16px;
   font-family: 'Roboto';
-  font-size: 23px;
+  width: 550px;
 }
-
+@media screen and (min-width: 768px) {
+  .title {
+    font-size: 24px;
+  }
+  .delete-btn {
+    font-size: 18px;
+    padding: 8px 16px 8px 16px;
+    margin-left: 32px;
+  }
+}
 .button {
   color: #ff0b37;
   background-color: #ffffff;
@@ -23,10 +45,12 @@
   cursor: pointer;
   padding: 4px 8px 4px 8px;
 }
-@media screen and(min-widthh:768px){
-  .button{
-    font-size: 19px;
-    padding: 8px 16px 8px 16px;
-    margin-left: 30px;
-  }
+.editButton {
+  color: #3b82fb;
+  background-color: white;
+  border: 1px solid #3b82fb;
+  border-radius: 10px;
+  height: 25px;
+  width: 54px;
+  margin-right: 10px;
 }
